@@ -24,5 +24,6 @@ public class HeightCategory
         {
             Console.WriteLine("Abnormal");
         }
+        Console.WriteLine("Program end");
     }
 }
