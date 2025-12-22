@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using LoopStatements;
+using LoopExercises;
 
 Console.WriteLine("Hello, World!");
 FibonacciSeries.PrintFibonaaci();
@@ -15,5 +15,5 @@ GussessingGame.GussessingGameMain();
 SumOfDigits.SumOfDigitsMain();
 ContinueUsage.PrintExceptMultipleOf3();
 MenuSystem.MenuSystemMain();
-StrongNumber.StrongNumberMain();
+ StrongNumber.StrongNumberMain();
 SearchWithGoto.SearchWithGotoMain();
