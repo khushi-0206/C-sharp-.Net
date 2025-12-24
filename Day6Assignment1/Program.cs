@@ -18,7 +18,7 @@ DateTime dueDate = DateTime.Parse(Console.ReadLine());
 Console.Write("Enter the return date {dd/mm/yyyy}: ");
 DateTime returnDate = DateTime.Parse(Console.ReadLine());
 
-Console.Write("Enter the days to read: {dd/mm/yyyy}");
+Console.Write("Enter the days to read: ");
 int daysToread = Int32.Parse(Console.ReadLine());
 
 Console.Write("Enter the daily late fee rate: ");
