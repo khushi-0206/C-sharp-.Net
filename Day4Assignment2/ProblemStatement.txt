@@ -1,0 +1,55 @@
+Topics Covered: Datatypes, Variables, Operators, If, If-Else, If-Else-If, Switch, Nested Switch, Nested Decision
+Making, Logical Operators
+
+Problem Statement: Travel Ticket Booking & Fare Processing System
+Design a Java program that simulates a travel ticket booking system. The program must validate passenger details,
+calculate fare dynamically, apply discounts, and determine booking status using multiple decision structures.
+
+Step 1: Passenger Input
+• Passenger ID (int)
+• Passenger Name (String)
+• Age (int)
+• Travel Type (int): 1-Bus, 2-Train, 3-Flight
+• Base Fare (double)
+• Is Government Employee (boolean: true/false)
+
+Step 2: Age & Eligibility Validation (if / else)
+• If age < 5 → Print 'Free Ticket – No Booking Required' and stop execution.
+• If age > 80 → Print 'Medical Clearance Required' and stop execution.
+• Else → Continue booking process.
+
+Step 3: Travel Type & Class Selection (Nested Switch)
+Bus: 1-Sleeper, 2-Seater
+Train: 1-General, 2-Sleeper, 3-AC
+Flight: 1-Economy, 2-Business
+Step 4: Fare Multiplier Calculation
+Travel      Type Class      Multiplier
+Bus           Sleeper        1.2
+Bus           Seater         1.0
+Train         General        1.0
+Train         Sleeper        1.3
+Train         AC             1.6
+Flight        Economy        2.5
+Flight        Business       3.5
+
+Fare After Class = Base Fare × Multiplier
+
+Step 5: Discount Calculation (if-else-if + logical operators)
+Apply discounts in the following priority order:
+• Age ≥ 60 → 30% Senior Citizen Discount
+• Else if Government Employee → 15% Discount
+• Else if Age between 5 and 12 → 50% Child Discount
+• Else → No Discount
+Final Fare = Fare After Class − Discount Amount
+
+Step 6: Booking Status (Nested Decision Making)
+• If final fare ≥ 10,000:
+• If travel type is Flight → Booking Status: Confirmed
+• Else → Booking Status: Waiting List
+• Else → Booking Status: Confirmed
+
+Step 7: Display Ticket Summary
+Display Passenger ID, Name, Travel Type, Class, Base Fare, Final Fare, Discount Applied, and Booking Status.
+
+Note: Use meaningful variable names, proper indentation, and clear output formatting. Partial logic errors will
+reduce marks.
