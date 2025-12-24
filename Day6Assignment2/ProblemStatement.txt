@@ -4,10 +4,10 @@ As their software consultant, you can help her by developing a C# application
 Functionalities:
 In class Cab, implement the below-given properties.
 Datatype        Property Name
+string            BookingId
 string            CabType
-string            Distance
-double            WaitingTime
-int               BookingId
+double            Distance
+int               WaitingTime
 
 In class CabDetails, implement the below-given methods and also Inherit class Cab.
 
