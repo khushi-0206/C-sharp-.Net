@@ -1,0 +1,4 @@
+interface IBroadbandPlan
+{
+    int GetBroadbandPlanAmount();
+}
