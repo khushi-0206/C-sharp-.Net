@@ -1,0 +1,46 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<AuthenticationDemo.Models.CartItem>
+@{
+    decimal total = 0;
+}
+
+<h2>Your Cart</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Qty</th>
+        <th>Subtotal</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        var subtotal = item.Product.Cost * item.Quantity;
+        total += subtotal;
+
+        <tr>
+            <td><img src="@item.Product.ImageUrl" width="70" height="70" /></td>
+            <td>@item.Product.Name</td>
+            <td>₹@item.Product.Cost</td>
+            <td>
+                <a href="/Cart/Decrease/@item.Product.ProductId"
+                   class="btn btn-danger btn-sm">-</a>
+
+                @item.Quantity
+
+                <a href="/Cart/Increase/@item.Product.ProductId"
+                   class="btn btn-success btn-sm">+</a>
+            </td>
+            <td>₹@subtotal</td>
+        </tr>
+    }
+
+</table>
+
+<h3>Total: ₹@total</h3>
